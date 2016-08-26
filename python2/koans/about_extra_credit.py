@@ -11,10 +11,12 @@
 # is a free form assignment, so approach it however you desire.
 
 from runner.koan import *
-
+from about_dice_project import DiceSet
+from about_scoring_project import score
 
 class AboutExtraCredit(Koan):
     # Write tests here. If you need extra test classes add them to the
     # test suite in runner/path_to_enlightenment.py
     def test_extra_credit_task(self):
+        dice = DiceSet()
         pass
