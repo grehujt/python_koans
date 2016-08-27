@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from collections import Counter
+
 from runner.koan import *
 
 
@@ -35,11 +37,7 @@ from runner.koan import *
 
 def score(dice):
     # You need to write this method
-    nums = {}
-    for i in dice:
-        if i not in nums:
-            nums[i] = 0
-        nums[i] += 1
+    nums = Counter(dice)
     result = 0
     for n, c in nums.iteritems():
         if n == 1:
